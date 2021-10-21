@@ -5,13 +5,6 @@ body{
   background-color: #f1f1f1;
 }
 
-body .main_header{
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-}
-
 header{
   display: flex;
   flex-direction: column;
@@ -45,15 +38,6 @@ header{
   color: #0000ff;
 }
 
-.pricing{
-  min-height: 500px;
-  display: flex;
-  flex-flow: row wrap; 
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-}
-
 .card {
   background: #ffffff;
   border: 2px solid #ffffff;
@@ -63,15 +47,17 @@ header{
   width: 300px;
 }
 
+.pricing{
+  min-height: 450px;
+  display: flex;
+  flex-flow: row wrap; 
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
 .card header {
   background-color: #288088;
-
-}
-.package {
-  background: #ffffff;
-  margin: 12px;
-  border-radius: 7px;
-  padding: 0 0 50px 0;
 }
 
 .gallery{
