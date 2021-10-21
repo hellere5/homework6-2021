@@ -1,0 +1,172 @@
+
+body{
+  font-family: 'Alegreya Sans SC', serif;
+  background-image: url('../images/concrete_seamless.png');
+  background-color: #f1f1f1;
+}
+
+body .main_header{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* need to get the tab things right to skip to content */
+
+/* .skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 20px
+} */
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+}
+
+:visited{
+  color: #0000ff;
+}
+
+.pricing{
+  min-height: 500px;
+  display: flex;
+  flex-flow: row wrap; 
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 20px 0;
+  border-radius: 7px 7px 7px 0;
+  color: #000000;
+  width: 300px;
+}
+
+.card header {
+  background-color: #288088;
+
+}
+.package {
+  background: #ffffff;
+  margin: 12px;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+}
+
+.gallery{
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gallery > img{
+  border: 10px #50C7C7 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+@-webkit-keyframes logo_grow{
+  from {width: 50; opacity: 0;}
+  to {width: 425px; opacity: 1;}
+}
+
+@keyframes logo_grow{
+  from {width: 50px; opacity: 0;}
+  to {width: 425px; opacity: 1;}
+} 
+
+#logo{
+  animation-name: logo_grow;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
+
+@media screen and (min-width: 850px){
+  header{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card header{
+    position:static;
+  }
+
+  .nav_links{
+    flex-direction: row; 
+  }
+
+  .package {
+    flex-direction: column;
+    flex-basis: 250px;
+  } 
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  #logo {
+    animation: none;
+    width: 420px;
+    opacity: 1;
+  }
+}
+
+
+@media print { 
+  body {
+    background-image: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card {
+    border: 2px #45ADAD solid;
+    flex-basis: 250px;
+  }
+
+  #gallery, .gallery {
+    display: none;
+  }
+  /* need to add emojis and style this part right */
+}
