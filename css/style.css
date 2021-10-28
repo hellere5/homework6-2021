@@ -130,10 +130,6 @@ header{
     background-image: none;
   }
 
-  /* #logo {
-    opacity: 0;
-  } */
-
   nav {
     width: 100%;
   }
@@ -141,13 +137,13 @@ header{
   .nav_links {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
   .pricing {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     flex-flow: nowrap;
   }
@@ -172,5 +168,4 @@ header{
   #gallery, .gallery {
     display: none;
   }
-  /* need to add emojis and style this part right */
 }
